@@ -1,0 +1,406 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.content {
+    flex: 1 1 400px;
+    max-width: 600px;
+    margin: 10px;
+    margin-left: 150px;
+}
+.content h1 {
+    color: red;
+    font-size: 15px;
+}
+.content h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.content p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+.content button {
+    background-color: red;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.image {
+    flex: 1 1 400px;
+    max-width: 550px;
+    margin: 15px;
+}
+.image img {
+    max-width: 80%;
+    height: 80%;
+}
+@media (max-width: 768px) {
+    .content h2 {
+        font-size: 28px;
+    }
+    .content p {
+        font-size: 12px;
+    }
+    .content button {
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .content h2 {
+        font-size: 25px;
+    }
+    .content p {
+        font-size: 10px;
+    }
+    .content button {
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* What we do */
+.container1 {
+    text-align: center;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+.content1 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.content1 h1 {
+    color: red;
+    font-size: 15px;
+}
+.content1 h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+.content1 p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+.carousel-slide {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 500px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    /* background-color: yellow; */
+}
+.service {
+    position: relative;
+    margin: 15px;
+    width: 200px;
+    height: 300px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.service img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease-in-out;
+}
+.service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.service:hover img {
+    opacity: 0;
+}
+.service:hover .overlay {
+    opacity: 1;
+}
+.overlay h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.overlay p {
+    font-size: 14px;
+    padding: 0 20px;
+}
+.overlay button {
+    background-color: white;
+    color: red;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.dots {
+    margin-top: 10px;
+}
+.dot {
+    height: 5px;
+    width: 5px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: red;
+} 
+
+
+/* our project content*/
+
+.project-section {
+text-align: center;
+margin-top: 30px;
+}
+
+.project-section h2 {
+color: red;
+margin: 0;
+font-size: 20px;
+}
+
+.project-section h1 {
+margin: 10px 0;
+font-size: 30px;
+}
+
+.content2 {
+display: flex;
+align-items: center;
+
+}
+
+.image-container2 {
+flex: 1;
+margin-left:100px;
+margin-top: 30px;
+margin-bottom: 0px;
+}
+
+.image-container2 img {
+width: 80%;
+height: auto;
+}
+
+.text-container2 {
+flex: 1;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.text-item {
+padding: 5px;
+background-color: #f0f0f0;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-right: 200px;
+font-size: 13px;
+}
+
+.text-item.active,
+.text-item:hover {
+background-color: #ff4d4d;
+color: white;
+}
+
+
+/* company growth */
+
+.growth-section {
+text-align: center;
+width: 100%;
+margin-top: 25px;
+margin-bottom: 50px;
+font-family: Arial, sans-serif;
+background-color: #f5f5f5;
+justify-content: center;
+align-items: center;
+height: 60vh;
+margin: 0;
+}
+
+.growth-section .content3{
+margin-top: 1px;
+}
+.content3 h2 {
+color: red;
+font-size: 20px;
+text-align: center;
+margin-top: 30px;
+padding-top: 50px;
+}
+
+.content3 h1 {
+font-size: 25px;
+margin-top: 30px;
+}
+
+.cards {
+display: flex;
+justify-content: space-around;
+margin-top: 4px;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+.card {
+background-color: white;
+border-radius: 8px;
+padding:3px;
+width: 100px;
+height: 100px;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+/* margin-left: 20px; */
+}
+
+.card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+color: red;
+/* margin-bottom: 10px; */
+}
+
+.number {
+font-size: 20px;
+font-weight: bold;
+/* margin-bottom: 5px; */
+}
+
+.description {
+font-size: 20px;
+color: gray;
+}
+
+
+
+
+/* contact Us */
+
+
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+background-color: white;
+margin: 15% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 50%;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+/* width: 500px;
+height: 400px; */
+}
+
+.close-button {
+color: #aaa;
+float: right;
+font-size: 20px;
+font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.contact-form {
+display: flex;
+flex-direction: column;
+}
+
+.contact-form h2 {
+margin-top: 0;
+}
+
+.contact-form label {
+margin-top: 20px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"] {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 15px;
+}
+
+.name-container {
+display: flex;
+justify-content: space-between;
+}
+
+.name-item {
+width: 48%;
+}
+
+.checkbox-container {
+display: flex;
+align-items: center;
+margin-top: 15px;
+}
+
+.checkbox-container input {
+margin-top: 21px;
+margin-right: 10px;
+}
+
+.submit-button {
+background-color: #ff0057;
+color: white;
+padding: 15px 0;
+border: none;
+border-radius: 5px;
+font-size: 15px;
+cursor: pointer;
+margin-top: 20px;
+}
